@@ -1,0 +1,64 @@
+[gd_resource type="Theme" load_steps=13 format=2]
+
+[ext_resource path="res://assets/Fonts/option.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/ThemesAndStyles/buttonFocus.tres" type="StyleBox" id=2]
+[ext_resource path="res://assets/ThemesAndStyles/buttonMainHover.tres" type="StyleBox" id=3]
+[ext_resource path="res://assets/ThemesAndStyles/buttonMainPress.tres" type="StyleBox" id=4]
+[ext_resource path="res://assets/ThemesAndStyles/sliderNonsectionBOX.tres" type="StyleBox" id=5]
+[ext_resource path="res://assets/ThemesAndStyles/sliderSectionSelectedBOX.tres" type="StyleBox" id=6]
+[ext_resource path="res://assets/Textures/2D/Icons/sliderGem.png" type="Texture" id=7]
+[ext_resource path="res://assets/Textures/2D/Icons/selectedGem.png" type="Texture" id=8]
+[ext_resource path="res://assets/ThemesAndStyles/sliderSectionUnselectedBOXver.tres" type="StyleBox" id=9]
+[ext_resource path="res://assets/Textures/2D/Icons/off.png" type="Texture" id=10]
+[ext_resource path="res://assets/Textures/2D/Icons/on.png" type="Texture" id=11]
+[ext_resource path="res://assets/ThemesAndStyles/buttonMainNormal.tres" type="StyleBox" id=12]
+
+[resource]
+default_font = ExtResource( 1 )
+Button/styles/focus = ExtResource( 2 )
+Button/styles/hover = ExtResource( 3 )
+Button/styles/normal = ExtResource( 12 )
+Button/styles/pressed = ExtResource( 4 )
+CheckBox/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+CheckBox/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+CheckBox/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+CheckBox/colors/font_color_hover_pressed = Color( 1, 1, 1, 1 )
+CheckBox/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+CheckBox/constants/check_vadjust = 0
+CheckBox/constants/hseparation = 4
+CheckBox/fonts/font = null
+CheckBox/icons/checked = ExtResource( 11 )
+CheckBox/icons/radio_checked = null
+CheckBox/icons/radio_unchecked = null
+CheckBox/icons/unchecked = ExtResource( 10 )
+CheckBox/styles/disabled = null
+CheckBox/styles/focus = ExtResource( 2 )
+CheckBox/styles/hover = null
+CheckBox/styles/hover_pressed = null
+CheckBox/styles/normal = null
+CheckBox/styles/pressed = null
+CheckButton/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+CheckButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+CheckButton/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+CheckButton/colors/font_color_hover_pressed = Color( 1, 1, 1, 1 )
+CheckButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+CheckButton/constants/check_vadjust = 0
+CheckButton/constants/hseparation = 4
+CheckButton/fonts/font = null
+CheckButton/icons/off = ExtResource( 10 )
+CheckButton/icons/off_disabled = null
+CheckButton/icons/on = ExtResource( 11 )
+CheckButton/icons/on_disabled = null
+CheckButton/styles/disabled = null
+CheckButton/styles/focus = ExtResource( 2 )
+CheckButton/styles/hover = null
+CheckButton/styles/hover_pressed = null
+CheckButton/styles/normal = null
+CheckButton/styles/pressed = null
+HSlider/icons/grabber = ExtResource( 7 )
+HSlider/icons/grabber_disabled = null
+HSlider/icons/grabber_highlight = ExtResource( 8 )
+HSlider/icons/tick = null
+HSlider/styles/grabber_area = ExtResource( 9 )
+HSlider/styles/grabber_area_highlight = ExtResource( 6 )
+HSlider/styles/slider = ExtResource( 5 )

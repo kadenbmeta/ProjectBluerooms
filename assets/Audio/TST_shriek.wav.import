@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/TST_shriek.wav-7bead747c932302f5dd3f1b296866278.sample"
+
+[deps]
+
+source_file="res://assets/Audio/TST_shriek.wav"
+dest_files=[ "res://.import/TST_shriek.wav-7bead747c932302f5dd3f1b296866278.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

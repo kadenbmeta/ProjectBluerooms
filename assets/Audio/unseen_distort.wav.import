@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/unseen_distort.wav-ec891d5859a78a89209255ebc658a6f5.sample"
+
+[deps]
+
+source_file="res://assets/Audio/unseen_distort.wav"
+dest_files=[ "res://.import/unseen_distort.wav-ec891d5859a78a89209255ebc658a6f5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Key_and_door_sounds_bluerooms.ogg-ed2203920ae6d3a5c0f5a2bb806d4863.oggstr"
+
+[deps]
+
+source_file="res://assets/Audio/UNEDITED VERSIONS/Key_and_door_sounds_bluerooms.ogg"
+dest_files=[ "res://.import/Key_and_door_sounds_bluerooms.ogg-ed2203920ae6d3a5c0f5a2bb806d4863.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,26 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/Scripts/roomGen.gd" type="Script" id=1]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredEMPTY.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredCROSS.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredISLANDS.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredNEWENCOUNTER.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredSAFEPILLAR.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredCORRIDOR.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredCRATE.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredTRAP.tscn" type="PackedScene" id=9]
+
+[node name="Level-bluered" type="Spatial"]
+script = ExtResource( 1 )
+sizeX = 22
+sizeZ = 22
+possibleRooms = [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 6 ) ]
+levelMusicPath = "res://assets/Audio/level2.ogg"
+levelStartThoughts = [ "The safes are now in the rooms with the pillars in the middle.", "You should know what to do.", "Good luck." ]
+nextLevelPath = "res://assets/Levels/Long/Level-longEASY.tscn"
+pointsToWin = 3
+nextLevelID = 4
+thisLevelID = 3
+
+[node name="Room" parent="." instance=ExtResource( 2 )]
+open = true

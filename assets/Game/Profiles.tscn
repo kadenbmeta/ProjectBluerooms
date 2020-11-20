@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Scripts/Profiles.gd" type="Script" id=1]
+[ext_resource path="res://assets/Fonts/console.tres" type="DynamicFont" id=2]
+
+[node name="Profiles" type="Node"]
+script = ExtResource( 1 )
+
+[node name="BG" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Console" type="Label" parent="."]
+margin_left = 20.0
+margin_right = 1004.0
+margin_bottom = 580.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.156863, 1, 0, 1 )
+text = "█████████████████████████████████████████████████
+█  ██  ███ ████ █   ██  █   ██  █  ███ ███  █   █
+█ █ █ █ █ █ ███ █ ███ ████ ██ ███ █ █ █ █ ███ ███
+█  ██  ██ █ ███ █  ██ ████ ███ ██  ██   █ ███  ██
+█ ███ █ █ █ █ █ █ ███ ████ ████ █ ███ █ █ ███ ███
+█ ███ █ ██ ███ ██   ██  ██ ██  ██ ███ █ ██  █   █
+█████████████████████████████████████████████████
+[By EditSoft] (Version 33)
+
+Please input a ProjectSpace Environment
+(With a envFormat of 1-3) [.PSE .PSEN or .PSEF]
+{| user://core/hemiReal.psef |}
+Please input an action [load or edit]
+{| load |}
+
+<[({ H e m i R e a l })]>
+[By HemiTau]
+(Powered by ProjectSpace Version 33)
+<ProjectSpace was created by EditSoft>
+
+Currently running with remainder of [2831853071]
+Stateshots use the file extension [.HTSS]
+
+Input S to save a stateshot
+Input L to load a stateshot
+Input D to enter HemiTau developer mode
+
+(L)
+
+Provide path to file to load
+(“../pBR.htss”)
+"
+align = 2
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

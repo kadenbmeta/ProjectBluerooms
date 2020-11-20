@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/Fonts/option.tres" type="DynamicFont" id=1]
+[ext_resource path="res://DebuggingNotifyScript.gd" type="Script" id=2]
+[ext_resource path="res://assets/Textures/2D/Enemies/The Unseen/unseen_death.png" type="Texture" id=3]
+[ext_resource path="res://SeedNotify.gd" type="Script" id=4]
+[ext_resource path="res://assets/Fonts/optionNorm.tres" type="DynamicFont" id=5]
+
+[node name="DebuggingNotifyLayer" type="CanvasLayer"]
+layer = 5
+
+[node name="DebuggingNotify" type="Control" parent="."]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="DebuggingNotify"]
+margin_right = 368.0
+margin_bottom = 16.0
+custom_fonts/font = ExtResource( 1 )
+text = "DEBUGGING - LAG MAY BE HIGHER THAN NORMAL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TheUnseenSprite" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Seed" type="Label" parent="."]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = ExtResource( 5 )
+text = "SEED = "
+align = 2
+valign = 2
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

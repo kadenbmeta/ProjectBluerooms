@@ -1,0 +1,22 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/Scripts/roomGen.gd" type="Script" id=1]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishEMPTY.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishBRIDGE.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishFLOAT.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishHOLE.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishYOOT_SURPRISE.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishHIDDEN.tscn" type="PackedScene" id=7]
+
+[node name="Level-houseishHARD" type="Spatial"]
+script = ExtResource( 1 )
+sizeX = 22
+sizeZ = 22
+possibleRooms = [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ) ]
+levelMusicPath = "res://assets/Audio/level1.ogg"
+levelStartThoughts = [ "What are you doing here?", "It isn't worth coming here.", "Be very careful.", "Good luck." ]
+pointsToWin = 5
+thisLevelID = 100
+
+[node name="Inside" parent="." instance=ExtResource( 2 )]
+open = true

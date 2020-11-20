@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Bluerooms_walk_and_other_stuff.ogg-9e5ef927be3da0cbd6ac3c01049d4b3f.oggstr"
+
+[deps]
+
+source_file="res://assets/Audio/UNEDITED VERSIONS/Bluerooms_walk_and_other_stuff.ogg"
+dest_files=[ "res://.import/Bluerooms_walk_and_other_stuff.ogg-9e5ef927be3da0cbd6ac3c01049d4b3f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

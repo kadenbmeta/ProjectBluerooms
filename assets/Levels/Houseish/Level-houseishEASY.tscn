@@ -1,0 +1,22 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/Scripts/roomGen.gd" type="Script" id=1]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishEMPTY.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishBRIDGE.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishYOOT.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishHOLE.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishPRIZE.tscn" type="PackedScene" id=6]
+
+[node name="Level-houseishEASY" type="Spatial"]
+script = ExtResource( 1 )
+sizeX = 22
+sizeZ = 22
+possibleRooms = [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ) ]
+levelMusicPath = "res://assets/Audio/level1.ogg"
+levelStartThoughts = [ "Welcome! (Use Q to advance yellow text)", "Use WASD to move, mouse to turn, shift to sprint, and space to jump.", "In the top-right of your screen is your items. This includes points.", "Each room you go through will be randomly chosen.", "Sometimes there may be a odd looking spinning cube.", "Walk into it to collect it, once collected you will earn a point!", "As you can see, you need 5 points to beat this stage.", "In the chance something seems to be coming towards you,", "get. out.", "After this text is gone you will be able to use E to open doors.", "Oh yeah, and if you need to use the pause menu, use ESC.", "Good luck." ]
+nextLevelPath = "res://assets/Levels/Houseish/Level-houseish.tscn"
+pointsToWin = 5
+nextLevelID = 1
+
+[node name="Inside" parent="." instance=ExtResource( 2 )]
+open = true

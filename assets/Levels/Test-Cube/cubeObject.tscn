@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Textures/2D/Items/cubeAnimation.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/Scripts/cubeSpriteTest.gd" type="Script" id=9]
+
+
+[node name="Cube" type="AnimatedSprite3D"]
+pixel_size = 0.001
+frames = ExtResource( 1 )
+animation = "1"
+script = ExtResource( 9 )

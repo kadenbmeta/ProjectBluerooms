@@ -1,0 +1,115 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/Fonts/thoughts.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/Fonts/death.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/Audio/walk.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/Audio/run.wav" type="AudioStream" id=5]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.75
+height = 1.25
+
+[sub_resource type="CapsuleMesh" id=2]
+radius = 0.75
+mid_height = 1.25
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0, 1, 0.976471, 1 )
+
+[sub_resource type="SphereMesh" id=4]
+material = SubResource( 3 )
+flip_faces = true
+
+[node name="Player" type="KinematicBody"]
+collision_layer = 3
+script = ExtResource( 1 )
+WALK_SOUND = ExtResource( 4 )
+RUN_SOUND = ExtResource( 5 )
+
+[node name="Head" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.837377, 0 )
+
+[node name="Camera" type="Camera" parent="Head"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="VisualCollisionShape" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Fog" type="MeshInstance" parent="."]
+transform = Transform( 50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0.837, 0 )
+visible = false
+mesh = SubResource( 4 )
+material/0 = null
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Tail" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4, 0 )
+enabled = true
+cast_to = Vector3( 0, 1, 0 )
+
+[node name="Light" type="OmniLight" parent="."]
+omni_range = 20.0
+
+[node name="StepsAudio" type="AudioStreamPlayer3D" parent="."]
+unit_size = 30.0
+max_db = 6.0
+max_distance = 50.0
+bus = "SFX"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ThoughtBox" type="Label" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = " PLACEHOLDER TEXT"
+align = 1
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DeathScreen" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.556863, 0.0862745, 0.0862745, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DeathText" type="Label" parent="DeathScreen"]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.745098, 0.211765, 0.211765, 1 )
+text = "PLACEHOLDER TEXT"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemBox" type="Label" parent="."]
+margin_top = 20.0
+margin_right = 1004.0
+margin_bottom = 600.0
+custom_fonts/font = ExtResource( 2 )
+text = " PLACEHOLDER TEXT"
+align = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,24 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/Scripts/roomGen.gd" type="Script" id=1]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredCRATE.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredSAFE.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredPILLAR.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredCROSS.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredNEWENCOUNTER.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredCORRIDOR.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/Levels/Bluered/Room-blueredEMPTY.tscn" type="PackedScene" id=8]
+
+[node name="Level-blueredEASY" type="Spatial"]
+script = ExtResource( 1 )
+sizeX = 22
+sizeZ = 22
+possibleRooms = [ ExtResource( 7 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ) ]
+levelMusicPath = "res://assets/Audio/level2.ogg"
+levelStartThoughts = [ "Great job!", "You've made it deeper, so now things are gonna be different.", "The cubes are inside safes, you need a key to open a safe.", "The keys, however, are in crates.", "Crates can be broken by the new encounter.", "We call them...", "..the \"Two-sided Terror.\"", "Stupid name I know.", "Good luck." ]
+nextLevelPath = "res://assets/Levels/Bluered/Level-bluered.tscn"
+pointsToWin = 3
+nextLevelID = 3
+thisLevelID = 2
+
+[node name="Room" parent="." instance=ExtResource( 8 )]

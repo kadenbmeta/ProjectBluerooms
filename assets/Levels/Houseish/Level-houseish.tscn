@@ -1,0 +1,24 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/Scripts/roomGen.gd" type="Script" id=1]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishEMPTY.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishBRIDGE.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishYOOT.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishHOLE.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishYOOT_SURPRISE.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Levels/Houseish/Room-houseishHIDDEN.tscn" type="PackedScene" id=7]
+
+[node name="Level-houseish" type="Spatial"]
+script = ExtResource( 1 )
+sizeX = 22
+sizeZ = 22
+possibleRooms = [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 6 ) ]
+levelMusicPath = "res://assets/Audio/level1.ogg"
+levelStartThoughts = [ "Congrats on surviving!", "Now things are gonna get harder.", "You will need to use IT to your advantage.", "The cubes are inside the rooms with boxes made of walls, that do not contain IT inside.", "However, THEY can break walls.", "You'll have to lure them.", "Good luck." ]
+nextLevelPath = "res://assets/Levels/Bluered/Level-blueredEASY.tscn"
+pointsToWin = 3
+nextLevelID = 2
+thisLevelID = 1
+
+[node name="Inside" parent="." instance=ExtResource( 2 )]
+open = true

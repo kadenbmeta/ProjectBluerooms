@@ -1,0 +1,122 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Scripts/Lobby.gd" type="Script" id=1]
+[ext_resource path="res://assets/Fonts/option.tres" type="DynamicFont" id=2]
+
+[node name="TestLobby" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonSingle" type="Button" parent="."]
+margin_left = 7.0
+margin_top = 9.0
+margin_right = 207.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 2 )
+text = "General Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonLevel0" type="Button" parent="."]
+margin_left = 215.895
+margin_top = 8.7368
+margin_right = 415.895
+margin_bottom = 71.7368
+custom_fonts/font = ExtResource( 2 )
+text = "GridMap Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonInfinite" type="Button" parent="."]
+margin_left = 426.895
+margin_top = 9.7368
+margin_right = 626.895
+margin_bottom = 72.7368
+custom_fonts/font = ExtResource( 2 )
+text = "Room testTEST"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonInfinite2" type="Button" parent="."]
+margin_left = 634.895
+margin_top = 9.7368
+margin_right = 834.895
+margin_bottom = 72.7368
+custom_fonts/font = ExtResource( 2 )
+text = "Infinite Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonSizeRand" type="Button" parent="."]
+margin_left = 841.0
+margin_top = 10.0
+margin_right = 1017.0
+margin_bottom = 73.0
+custom_fonts/font = ExtResource( 2 )
+text = "Size/Random Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonEdit" type="Button" parent="."]
+margin_left = 9.0
+margin_top = 84.0
+margin_right = 209.0
+margin_bottom = 147.0
+custom_fonts/font = ExtResource( 2 )
+text = "GMap Editing Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonYoot" type="Button" parent="."]
+margin_left = 217.0
+margin_top = 84.0
+margin_right = 417.0
+margin_bottom = 147.0
+custom_fonts/font = ExtResource( 2 )
+text = "Enemy Test (Yoot)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonCube" type="Button" parent="."]
+margin_left = 428.0
+margin_top = 84.0
+margin_right = 627.0
+margin_bottom = 147.0
+custom_fonts/font = ExtResource( 2 )
+text = "Sudo-3D Sprite Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonEnemy" type="Button" parent="."]
+margin_left = 635.653
+margin_top = 84.0
+margin_right = 834.653
+margin_bottom = 147.0
+custom_fonts/font = ExtResource( 2 )
+text = "Enemy Test (Not in room)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="buttonSingle" to="." method="_on_buttonSingle_pressed"]
+[connection signal="pressed" from="buttonLevel0" to="." method="_on_buttonLevel0_pressed"]
+[connection signal="pressed" from="buttonInfinite" to="." method="_on_buttonInfinite_pressed"]
+[connection signal="pressed" from="buttonInfinite2" to="." method="_on_buttonInfinite2_pressed"]
+[connection signal="pressed" from="buttonSizeRand" to="." method="_on_buttonSizeRand_pressed"]
+[connection signal="pressed" from="buttonEdit" to="." method="_on_buttonEdit_pressed"]
+[connection signal="pressed" from="buttonYoot" to="." method="_on_buttonYoot_pressed"]
+[connection signal="pressed" from="buttonCube" to="." method="_on_buttonCube_pressed"]
+[connection signal="pressed" from="buttonEnemy" to="." method="_on_buttonEnemy_pressed"]

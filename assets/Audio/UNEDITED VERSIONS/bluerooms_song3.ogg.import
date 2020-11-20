@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bluerooms_song3.ogg-79ff9f80d1544f9d0bfb63e515400d7b.oggstr"
+
+[deps]
+
+source_file="res://assets/Audio/UNEDITED VERSIONS/bluerooms_song3.ogg"
+dest_files=[ "res://.import/bluerooms_song3.ogg-79ff9f80d1544f9d0bfb63e515400d7b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

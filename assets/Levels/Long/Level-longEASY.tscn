@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/Levels/Long/Room-longEMPTY.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Levels/Long/Room-longSAFE.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Levels/Long/Room-longMOUNT_YOOT_ALONG.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Levels/Long/Room-longMOUNT_YOOT_SHORT.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Scripts/roomGen.gd" type="Script" id=5]
+
+[node name="Level-long" type="Spatial"]
+script = ExtResource( 5 )
+sizeX = 22
+sizeZ = 66
+possibleRooms = [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ) ]
+levelMusicPath = "res://assets/Audio/level3.ogg"
+levelStartThoughts = [ "...oh.", "You're still here.", "Well...", "As you may guess something new is going to appear.", "If you open a door and see something that looks...", "...different...", "Then look away.", "Also this environment is unstable. I recommend you be careful about the... \"hills.\"", "Good luck." ]
+nextLevelPath = "res://assets/Levels/Long/Level-long.tscn"
+pointsToWin = 3
+nextLevelID = 5
+thisLevelID = 4
+lookAwayChance = 20
+
+[node name="Room" parent="." instance=ExtResource( 1 )]
