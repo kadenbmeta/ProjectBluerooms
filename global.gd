@@ -32,7 +32,6 @@ var ideasOrTodoList = {
 			"bridges"],
 		"Bugfixes": [
 			#"Angry Yoot in wall",
-			"Can't jump while holding shift",
 			"Running/walking sound during pause"],
 		"Items": [
 			"Bombs"],
@@ -43,8 +42,10 @@ var ideasOrTodoList = {
 			"Version loader",
 			"Modding support"],
 		"Audio": [
-			"Walking",
+			"Walking (better)",
 			"Key"],
+		"General": [
+			"Better fitting gui"],
 		
 		
 		

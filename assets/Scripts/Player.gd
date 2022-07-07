@@ -177,7 +177,9 @@ func _process(delta):
 	if global.undeclared.keys().find("speedrunTimer") != -1:
 		if global.undeclared["speedrunTimer"]:
 			global.debugMsg("global.undeclared[\"speedrunTimer\"] == true, showing timer",true,["Player.gd","_process"])
-			itemText.text += "\nCurrent Run Time: "+str(int(singularTime))+"\nBeginning Seed: "+str(global.undeclared["firstSeed"])+"\nCurrent Seed: "+str(global.rng.seed)
+			itemText.text += "\nCurrent Run Time: "+str(int(singularTime))
+			if global.gameMode == "complete":
+				itemText.text += "\nBeginning Seed: "+str(global.undeclared["firstSeed"])+"\nCurrent Seed: "+str(global.rng.seed)
 	if points >= pointsToWin:
 		global.debugMsg("Player passed level requiring {"+str(pointsToWin)+"} pts using {"+str(points)+"} pts.",true,["Player.gd","_process"])
 		# Win screen

@@ -14,7 +14,7 @@ cell_center_x = false
 cell_center_z = false
 collision_layer = 3
 data = {
-"cells": PoolIntArray( 0, 0, 536870917, 65536, 0, 4 )
+"cells": PoolIntArray( 0, 0, 5, 65536, 0, 4 )
 }
 script = ExtResource( 1 )
 __meta__ = {
